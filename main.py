@@ -1,4 +1,3 @@
-# main.py
 import uvicorn
 from api import app
 import os

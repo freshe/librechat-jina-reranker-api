@@ -1,4 +1,3 @@
-
 from fastapi import FastAPI, HTTPException, Body
 from fastembed.rerank.cross_encoder import TextCrossEncoder
 from pathlib import Path
