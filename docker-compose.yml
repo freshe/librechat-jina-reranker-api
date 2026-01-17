@@ -1,0 +1,19 @@
+services:
+  jina-api:
+    build:
+      context: .
+      args:
+        MODEL_NAME: jinaai/jina-reranker-v2-base-multilingual
+        CACHE_DIR: /app/.cache
+    environment:
+      SERVER_HOST: 0.0.0.0
+      SERVER_PORT: "8000"
+      MODEL_NAME: jinaai/jina-reranker-v2-base-multilingual
+      CACHE_DIR: /app/.cache
+    ports:
+      - "8000:8000"
+    volumes:
+      - jina_cache:/app/.cache
+
+volumes:
+  jina_cache:
