@@ -1,4 +1,13 @@
-.venv
 .DS_Store
-.cache
-__pycache__
+.Python
+.cache/
+.env
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.log
+.pytest_cache/
+dist/
+build/
