@@ -14,4 +14,5 @@ class JinaRerankerResponse(BaseModel):
 class JinaRerankerRequest(BaseModel):
     query: str
     documents: List[str]
-    batch_size: int
+    batch_size: int = 256
+    return_documents: bool = True
